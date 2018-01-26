@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- *변수명 작성규칙 
+		-문자,밑줄(_),달러 기호($) 시작
+		-대소문자 구별{'A'와 'a'는 서로 다른 변수
+		-한글 사용가능하나 영문자 사용 권장
+		-자바스크립트 예약어는 변수명으로 사용불가
+-->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x;			//변수 x를 선언한것, 값은 undefined가 된것
+		var y=10;		//변수 y선언 및 초기값 할당
+		var x=y;		//변수 y의 값을 변수 x에 할당
+		var a,b,c;		//변수 a,b,c 선언
+		var a=10,b=11,c=12; //변수 a,b,c 선언 및 각각 다른 값으로 초기값 할당
+		var a=b=c=10;	//선언 및 같은 초깃값 할당
+		var name="정도전",age=25;	//변수 name,age 선언 및 각각 다른 초기값 할당
+		var total=a+b+c;	//변수 a,b,c 값을 더한 결과를 변수 total에 저장
+		
+		var 7num=100;	//잘못사용하는 것
+		var &num=100;	//잘못사용하는 것
+		var true=1;	//잘못사용하는 것
+		var 10=x;	//잘못사용하는 것
+		var a+b=20;	//잘못사용하는 것
+		var get Number=100;	//잘못사용하는 것
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- 
+	* 가상 선택자
+		: 웹 문서에는 보이지 않지만
+		동작에 영향을 주는 속성을 선택자로 이동.
+		a:link {color:blue;}
+		  ====
+		  
+	* 이벤트 가상 클래스 선택자
+		: 사용자가 마우스 이벤트 행위를 어떻게 하는지에 따라서 스타일 시트 다르게 적용
+		- 종류
+			:link 선택자  	링크에서 방문하지 않았던 곳을 표시
+			:vidited 선택자	 선택자 웹문서에 사용자가
+			:active 선택자  웹문서에서 사용자가 링크를 클릭하는 순간을 표시
+			:hover 선택자 웹문서에서 사용자가 링크에 마우스 포인터를 올리는 손간을 나타냄
+			:focus 선택자 해당요소에 초점이 맞춰졌을때 적용됨
+ -->
+
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	/*가상클래스*/
+	a:link {color: blue; text-decoration: underline;}
+	a:visited {color: red;}
+</style>
+</head>
+<body>
+	<h2>Pseudo Class</h2>
+	<p><a href="https://www.w3.org/" target="_blank">W3C 방문</a>마우스 이벤트에 따른 링크의 변화를 잘 보세요.</p>
+	<div class="d1">
+		<h3>가상 클래스1 영역</h3>
+		마우스 위치에 따른 박스의 스타일 변화를 보세요.
+	</div>
+	<div class="d2">
+		<h3>가상클래스2 영역</h3>
+		마우스 위체에 따른 박스의 스타일의 변화를 보세요.
+	</div>
+</body>
+</html>

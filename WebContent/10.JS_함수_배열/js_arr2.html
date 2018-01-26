@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var city=["Seoul",,"Busan",,"Incheon"]; //실상은 5개인데, 2번째와 4번째는 공백이 들어간 것이된다.
+	//공백을 넣었을때 어떻게 초기화가 되는지
+		function printArr(){
+			var i;
+			for(i=0;i<city.length;i++){
+				document.write("배열 데이터 [" +i+ "] = " +city[i]+ "<br>");
+			}
+		}
+		printArr();
+		//결과 : 초기화 되어있지 않은 것은 기본적으로 undefined 값 같는다.
+		/*
+			배열 데이터 [0] = Seoul
+			배열 데이터 [1] = undefined
+			배열 데이터 [2] = Busan
+			배열 데이터 [3] = undefined
+			배열 데이터 [4] = Incheon
+		*/
+	</script>
+</body>
+</html>

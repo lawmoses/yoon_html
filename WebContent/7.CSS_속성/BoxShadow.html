@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- 
+	*박스 그림자 
+		-박스에 그림자 효과 적용
+						h-shadow	v-shadow	  blur	  spread   inset
+		{box-shadow : 수평 그림자(필수) | 수직그림자(필수) | 그림자 흐림 | 그림자 번짐 | 삽입효과;}
+ -->
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		body{
+			font-weight: bold;
+			font-size: 12pt;
+		}
+		.boxshadow1{
+			background-color: yellow;
+			border: 5px solid blue;
+			box-shadow: 10px 10px 0px teal;
+		}
+		.boxshadow2{
+			background-color: orange;
+			border: 5px solid red;
+			box-shadow: 20px 20px 50px red;
+		}
+		.boxshadow3{
+			background-color: silver;
+			border: 5px solid black;
+			box-shadow: 20px 20px 30px -20px maroon;
+		}
+		.boxshadow4{
+			background-color: lime;
+			border: 5px solid olive;
+			box-shadow: 10px 10px 0px 10px fuchsia inset; /* inset 그림자 효과가 바깥이 아닌 안쪽으로 나오는 것 */
+		}
+	</style>
+</head>
+<body>
+	<h1 class="boxshadow1">박스 그림자 스타일링 1</h1>
+	<h1 class="boxshadow2">박스 그림자 스타일링 2</h1>
+	<h1 class="boxshadow3">박스 그림자 스타일링 3</h1>
+	<h1 class="boxshadow4">박스 그림자 스타일링 4</h1>
+</body>
+</html>

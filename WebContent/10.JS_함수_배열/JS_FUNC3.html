@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- 
+	*함수 선언-무명함수
+			함수 표현식으로 작성하는 방법.
+			
+	var 변수명=function(매개변수1,매개변수2,...){ //함수선언
+		실행문장;
+	}
+	변수명(인자1,인자2,..);					 //함수호출
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var text1="함수 선언 전 호출";
+		var text2="함수 선언 후 호출";
+		//printMsg(text1);		//함수 선언 전 호출 <- g호출이 되지 않는다
+		var printMsg=function(msg){
+			document.write("함수 호출 메세지: "+msg+ "<br>");
+		}
+		printMsg(text2);		//함수 선언 후 호출
+		
+		
+	</script>
+</body>
+</html>

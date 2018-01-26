@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 
+	절대 위치 설정(absolute)
+		: 전체 페이지를 기준으로 top,right,bottom,left의 속성
+		이용하여 원하는 위치에 배치하는 방법.
+ -->
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		body{
+				font-weight: bold;
+				font-size: 12pt;
+			}
+		.ap1{
+			position: absolute;
+			left: 30px;
+			top: 70px;
+			background-color: yellow;
+			width: 400px;
+			height: 50px;
+		}
+		.ap2{
+			position: absolute;
+			left: 40px;
+			top: 90px;
+			background-color: yellow;
+			width: 400px;
+			height: 50px;
+		}
+		.rp{
+			position: relative;
+			left: 50px;
+			top: 80px;
+			background-color: cyan;
+			wodth: 400px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>positioning style3</h1>
+	<div class="ap1">절대 위치 설정 적용 - left 30px,top 70px</div>
+	<div class="ap2">절대 위치 설정 적용 - left 40px,top 90px</div>
+	<div class="rp">상대 위치 설정 적용 - left 50px,top 80px</div>
+</body>
+</html>

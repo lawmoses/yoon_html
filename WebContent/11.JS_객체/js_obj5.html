@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>[Jung's Car]</p>
+	<p id="carname"></p>
+	<p id="carcolor"></p>
+	<p id="carspeed"></p>
+	
+	<p>[Lee's Car]</p>
+	<p id="carname2"></p>
+	<p id="carcolor2"></p>
+	<p id="carspeed2"></p>
+	<script type="text/javascript">
+		function Car(name,color,speed){
+			this.name=name;
+			this.color=color;
+			this.speed=speed;
+			this.speedUp=function(){
+				return this.speed+10;
+			}
+			this.speedDown=function(){
+				return this.speed-10;
+			}
+		}
+	
+		var Jungcar=new Car('Sonata','blue',100);
+		var Leecar=new Car('Jeep','red',70);
+		var cname=document.getElementById("carname");
+		cname.textContent='자동차 이름: '+Jungcar.name;
+		var colname=document.getElementById("carcolor");
+		colname.textContent='자동차 색깔: '+Jungcar.color;
+		var cspeed=document.getElementById("carspeed");
+		cspeed.textContent='자동차 속도: '+Jungcar.speed;
+		
+	</script>
+	
+</body>
+</html>

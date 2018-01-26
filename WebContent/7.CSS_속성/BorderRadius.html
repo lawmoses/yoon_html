@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- 
+	*border-radius
+		:테두리의 모서리를 둥글게 설정
+		
+		border-radius: 속성값 				네개의 모서리를 모두 둥글게함.
+		border-top-left-radius: 속성값		상단 왼쪽 모서리를 둥글게함.
+		border-top-right-radius: 속성값 	상단 오른쪽 모서리를 둥글게함.
+		border-bottom-left-radius: 속성값	하단 왼쪽
+		border-bottom-right-radius: 속성값 하단 오른쪽
+ -->
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<style type="text/css">
+		body{
+			font-weight: bold;
+			font-size: 12pt;
+		}
+		.br1{
+			background-color: lime;
+			color: red;
+			border-style: solid;
+			border-width: thick;
+			border-color: green;
+			border-radius: 30%
+		}
+		.br2{
+			background-color: maroon;
+			color: yellow;
+			border-style: dotted;
+			border-width: 2px;
+			border-color: white;
+			border-radius: 15px 35px;
+		}
+		.br3{
+			background-color: teal;
+			color: aqua;
+			border-style: dashed;
+			border-width: 5px;
+			border-color: red;
+			border-radius: 5px 15px 25px 35px; /* 시계방향으로 주면 되겠다. */
+		}
+		.br4{
+			border: 3px solid red;
+			border-top-left-radius: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="br1">둥근 모서리 스타일링 1</h1>
+	<h1 class="br2">둥근 모서리 스타일링 2</h1>
+	<h1 class="br3">둥근 모서리 스타일링 3</h1>
+	<h1 class="br4">둥근 모서리 스타일링 4</h1>
+</body>
+</html>

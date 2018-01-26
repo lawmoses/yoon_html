@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+	1.CSS3
+		-Cascading Style Sheets (CSS)
+		-스타일 시트 표준안
+		-웹문서에 글꼴,색상,정렬과 각 요소의 배치 방법 등과 같은 디자인 요소를 적용하는데 사용.
+	2.CSS3의 구성
+		-선택자(Selector) : 스타일 시트를 적용할 대상을 지정
+		-속성(Property)  : 어떤 속성을 적용할지 선택
+		-속성값(Value)	   : 속성에 어떤 값을 반영할지 선택
+		
+		h1	{color:blue; font-size:12ps;}
+		===	====== =====			   =
+	  	선택자	   속성		속성값				  세미콜론
+	
+	3.CSS3의 필요성
+		-문서 작성과 디자인을 분리
+		하나의 웹 문서에서 문서작성 => HTML,
+					디자인 => CSS3가 담당.
+		-분리시 장점
+			-수정이 용이
+			-기능 확장 가능
+			-통일된 문서 양식 제공
+			-전송 및 로딩 시간 단축
+			
+	4.CSS3의 사용 위치
+		-인라인 스타일 시트
+			<DIV CSS>
+		-내부 스타일 시트
+			CSS
+			HTML 문서
+		-외부 스타일 시트 (분리)
+					CSS
+			
+			HTML문서			HTML문서
+			
+			
+ -->
+ 
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<link type="text/css" rel="stylesheet" href="cssstyle_external.css"></link>
+	<style type="text/css">
+		/* 내부 스타일 시트 적용 방법  */		
+		p2 {color: blue;}
+	
+	</style>
+</head>
+<body>
+	<!-- 인라인 스타일 시트 적용 방법 / 3가지이다 / 잘나가는 사람들은 p3 형식으로 준다. 그때 그때마다 수정한다. -->
+	<p1 style="color:red;">인라인 스타일시트 적용</p1>
+	<p2>내부 스타일시트 적용</p2>
+	<p3>외부 스타일시트 적용</p3>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

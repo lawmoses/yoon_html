@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var globValue1;	//지역변수 선언
+		globValue2;		//전역변수 선언, var 생략
+		
+		function 함수(){
+			var locValue;	//지역변수 선언
+				globValue;	//전역변수 선언
+							//var 생략시 전역변수로 선언.
+			locValue=10;
+		}
+		globValue=10; 		//전역변수 사용. 문제 되지 않는다.
+	</script>
+	<script type="text/javascript">
+		function getGrade(){	//함수정의
+			var kor=95;			//지역변수
+		}
+		getGrade();
+		document.write("지역변수 값은 함수 외부에서 사용할 수 없다.<br>")
+		document.write("국어점수 : "+kor+"<br>") // kor는 호출할 수 없다. 내부에 있기 때문에.
+	</script>
+</body>
+</html>
